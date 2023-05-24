@@ -1,10 +1,3 @@
-production:
-  <<: *default
-  database: errorshare_production
-  username: errorshare
-  password: <%= ENV['ERRORSHARE_DATABASE_PASSWORD'] %>
-
-
 default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
